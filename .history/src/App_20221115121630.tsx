@@ -19,13 +19,23 @@ const App = () => {
         <input
           type="text"
           id="search"
-          placeholder="Search Images Here"
+          placeholder="Search Imges Here"
           required
         />
         <input type="submit" value="go" id="submit" />
       </form>
     </div>
   );
+
+  {
+    /* <form className="form-wrapper">
+    <input type="text" id="search" placeholder="Search for..." required>
+    <input type="submit" value="go" id="submit">
+</form>
+
+
+  </div>; */
+  }
 };
 
 export default App;

@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const App = () => {
+const App = (props: {}) => {
+  console.log(props);
   useEffect(() => {
     axios
       .get(
@@ -13,19 +14,7 @@ const App = () => {
       });
   });
 
-  return (
-    <div className="App">
-      <form className="form-wrapper">
-        <input
-          type="text"
-          id="search"
-          placeholder="Search Images Here"
-          required
-        />
-        <input type="submit" value="go" id="submit" />
-      </form>
-    </div>
-  );
+  return <div className="App">Welcome To My App</div>;
 };
 
 export default App;

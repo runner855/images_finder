@@ -9,21 +9,13 @@ const App = () => {
         "https://api.unsplash.com/photos/?client_id=zPi6Sflx5W_C6I12Yz8pN2jo8yqja4-6pH25LhpvtbI"
       )
       .then((response) => {
-        console.log("here", response);
+        console.log(response);
       });
   });
-
   return (
     <div className="App">
-      <form className="form-wrapper">
-        <input
-          type="text"
-          id="search"
-          placeholder="Search Images Here"
-          required
-        />
-        <input type="submit" value="go" id="submit" />
-      </form>
+      Welcome To My App
+      {Response}
     </div>
   );
 };

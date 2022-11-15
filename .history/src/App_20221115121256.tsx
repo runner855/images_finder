@@ -13,19 +13,15 @@ const App = () => {
       });
   });
 
-  return (
-    <div className="App">
-      <form className="form-wrapper">
-        <input
-          type="text"
-          id="search"
-          placeholder="Search Images Here"
-          required
-        />
-        <input type="submit" value="go" id="submit" />
-      </form>
-    </div>
-  );
+  return <div className="App">Welcome To My App
+  
+
+<form className="form-wrapper">
+    <input type="text" id="search" placeholder="Search for..." required>
+    <input type="submit" value="go" id="submit">
+</form>
+
+</div>
 };
 
 export default App;
