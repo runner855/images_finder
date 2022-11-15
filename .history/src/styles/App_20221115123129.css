@@ -1,0 +1,11 @@
+h1 {
+  font: 4em Lucida sans, Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 3em;
+  font-weight: 400;
+}
+
+.title {
+  border: solid 2em black;
+}

@@ -1,0 +1,17 @@
+body {
+  background-color: bisque;
+}
+
+h1 {
+  font: 4em Lucida sans, Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.title {
+  margin: 3em 9em 0em 9em;
+  border: solid 0.2em black;
+  border-radius: 2em;
+}
