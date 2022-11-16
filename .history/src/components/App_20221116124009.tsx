@@ -17,7 +17,7 @@ export const App = () => {
   const [searchBarValue, setSearchBarValue] = useState<string>("");
   const [images, setImages] = useState<ResultProps[]>([]);
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     Call.get("/search/photos", {
       params: { query: searchBarValue },
@@ -33,9 +33,7 @@ export const App = () => {
       </div>
 
       <SearchBar
-        handleSubmit={(e: React.MouseEvent<HTMLButtonElement>) =>
-          handleSubmit(e)
-        }
+        handleSubmit={() => handleSubmit}
         searchBarValue={searchBarValue}
         setSearchBarValue={(text: string) => setSearchBarValue(text)}
       />

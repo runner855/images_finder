@@ -1,0 +1,9 @@
+img {
+  width: 10em;
+  height: 10em;
+  border-radius: 1em;
+}
+
+img:hover {
+  border: solid 0.2em rosybrown;
+}

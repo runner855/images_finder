@@ -20,7 +20,7 @@ export const SearchBar = ({
           id="search"
           placeholder="Search Images Here"
           required
-          onChange={(e) => setSearchBarValue(e.target.value)}
+          onChange={(e) => setSearchBarValue(e)}
           value={searchBarValue}
         />
         <button
@@ -33,3 +33,9 @@ export const SearchBar = ({
     </div>
   );
 };
+
+// className="search-input"
+//             type="text"
+//             onChange={(e) => setValue(e.target.value)}
+//             value={value}
+//             placeholder={"Create Your Tasks!!"}

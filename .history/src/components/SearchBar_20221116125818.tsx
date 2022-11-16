@@ -33,3 +33,9 @@ export const SearchBar = ({
     </div>
   );
 };
+
+// className="search-input"
+//             type="text"
+//             onChange={(e) => setValue(e.target.value)}
+//             value={value}
+//             placeholder={"Create Your Tasks!!"}

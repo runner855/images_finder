@@ -3,12 +3,12 @@ import "../styles/ImagesContainer.css";
 import { ResultProps } from "./App";
 
 type ImagesContainerProps = {
-  images: ResultProps[];
+  images: ResultProps;
 };
 
-export const ImagesContainer = ({ images }: ImagesContainerProps) => {
+export const ImagesContainer = ({ images }: ImagesContainerProps[]) => {
   return (
-    <div className="images-container">
+    <div className="images-card">
       {images.map((item, index) => {
         return (
           <div

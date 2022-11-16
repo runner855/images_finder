@@ -34,7 +34,7 @@ export const App = () => {
 
       <SearchBar
         handleSubmit={(e: React.MouseEvent<HTMLButtonElement>) =>
-          handleSubmit(e)
+          handleSubmit(e: React.MouseEvent<HTMLButtonElement>)
         }
         searchBarValue={searchBarValue}
         setSearchBarValue={(text: string) => setSearchBarValue(text)}

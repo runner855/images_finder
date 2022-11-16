@@ -4,7 +4,7 @@ import "../styles/App.css";
 import { ImagesContainer } from "../components/ImagesContainer";
 import { SearchBar } from "./SearchBar";
 
-export type ResultProps = {
+type ResultProps = {
   urls: {
     raw: string;
     full: string;
@@ -17,7 +17,7 @@ export const App = () => {
   const [searchBarValue, setSearchBarValue] = useState<string>("");
   const [images, setImages] = useState<ResultProps[]>([]);
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     Call.get("/search/photos", {
       params: { query: searchBarValue },
@@ -32,13 +32,7 @@ export const App = () => {
         <h1>Let's Find Some Images!!</h1>
       </div>
 
-      <SearchBar
-        handleSubmit={(e: React.MouseEvent<HTMLButtonElement>) =>
-          handleSubmit(e)
-        }
-        searchBarValue={searchBarValue}
-        setSearchBarValue={(text: string) => setSearchBarValue(text)}
-      />
+      <SearchBar handleSubmit={handleSubmit} searchBarValue={searchBarValue} />
       <ImagesContainer images={images} />
     </div>
   );

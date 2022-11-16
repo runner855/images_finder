@@ -1,14 +1,9 @@
 import React from "react";
 import "../styles/ImagesContainer.css";
-import { ResultProps } from "./App";
 
-type ImagesContainerProps = {
-  images: ResultProps[];
-};
-
-export const ImagesContainer = ({ images }: ImagesContainerProps) => {
+export const ImagesContainer = ({ images }: any) => {
   return (
-    <div className="images-container">
+    <div className="images-card">
       {images.map((item, index) => {
         return (
           <div

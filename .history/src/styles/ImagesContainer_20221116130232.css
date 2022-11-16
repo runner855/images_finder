@@ -1,0 +1,16 @@
+img {
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+}
+
+img:hover {
+  border: solid 0.2em rosybrown;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-rows: repeat(8, 5vw); */
+  grid-gap: 15px;
+}

@@ -4,13 +4,12 @@ import "../styles/SearchBar.css";
 type searchBarProps = {
   searchBarValue: string;
   setSearchBarValue: (text: string) => void;
-  handleSubmit: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  handleSubmit: React.ChangeEvent<HTMLInputElement>;
 };
 
 export const SearchBar = ({
   handleSubmit,
   setSearchBarValue,
-  searchBarValue,
 }: searchBarProps) => {
   return (
     <div className="search-bar">
@@ -20,8 +19,7 @@ export const SearchBar = ({
           id="search"
           placeholder="Search Images Here"
           required
-          onChange={(e) => setSearchBarValue(e.target.value)}
-          value={searchBarValue}
+          onChange={setSearchBarValue}
         />
         <button
           id="submit"

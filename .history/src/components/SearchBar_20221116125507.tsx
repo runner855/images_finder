@@ -10,7 +10,6 @@ type searchBarProps = {
 export const SearchBar = ({
   handleSubmit,
   setSearchBarValue,
-  searchBarValue,
 }: searchBarProps) => {
   return (
     <div className="search-bar">
@@ -20,7 +19,7 @@ export const SearchBar = ({
           id="search"
           placeholder="Search Images Here"
           required
-          onChange={(e) => setSearchBarValue(e.target.value)}
+          onChange={(e) => setSearchBarValue(e)}
           value={searchBarValue}
         />
         <button
